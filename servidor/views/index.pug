@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Esta es la lista de todos los Eventos que hay:
+  ul  
+    for evento in eventos
+      span Artistas: #{evento.titulo} 
+      br
+      span Fecha: #{evento.fecha} 
+      br
+      span Lugar: #{evento.lugar}
+      br 
+      br
